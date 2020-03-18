@@ -129,6 +129,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  max-width: 100%;
 }
 html,
 body {
@@ -136,6 +137,20 @@ body {
 }
 html {
   font-size: 62.5%;
+}
+h2 {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: #C14659;
+}
+h3 {
+  font-size: 2.5rem;
+  color: white;
+}
+p {
+  font-size: 2rem;
+  line-height: 1.4;
 }
 h1 {
   font-size: 6rem;
@@ -145,7 +160,7 @@ h1 {
   color: white;
 }
 .container {
-  width: 96%;
+  border: grove 4% white;
   margin: 0 auto;
   background: linear-gradient(47deg, #C14659, #983E66, #61306F 80%);
 }
@@ -188,20 +203,34 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
+  margin-top: 3%;
+}
+.sec1 h2 {
+  margin-top: 5%;
+  color: #C14659;
 }
 @media (min-width: 800px) {
   .sec1 {
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
-.sec1 #profile-pic {
-  width: 30%;
+.sec1 .img-parent {
+  display: flex;
+  justify-content: center;
 }
 @media (min-width: 800px) {
-  .sec1 #profile-pic {
-    width: 40%;
+  .sec1 .img-parent {
+    justify-content: flex-start;
   }
+}
+.sec1 .img-parent #profile-pic {
+  width: 30%;
+  border-radius: 50%;
+  border: 3px solid #C14659;
+  object-fit: contain;
+  box-shadow: 0 3px 1rem black;
 }
 .sec2 {
   transition: background, font-size ease-in 0.4s;
@@ -214,27 +243,80 @@ header nav a:hover {
   .sec2 {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    align-items: baseline;
   }
 }
 .sec2 .card {
   background-color: #706D98;
   width: 90%;
   border: solid #D59BBB 1px;
-  border-radius: 2rem;
-  height: 15rem;
-  margin: 5% 0;
+  border-radius: 1rem;
+  height: fit-content;
+  margin: 1% 0;
+  box-shadow: 0 3px 1rem black;
+  padding: 3%;
+}
+.sec2 #card1 {
+  width: 60%;
+  border-radius: 0;
+  padding: 0 1%;
+}
+.sec2 #card1 p {
+  text-align: left;
 }
 @media (min-width: 800px) {
-  .sec2 .card {
-    width: 40%;
+  .sec2 #card1 {
+    width: 25%;
+    margin: 2% 1%;
+  }
+}
+.sec2 #card1 .about {
+  margin: 10% 0;
+  width: 100%;
+}
+.sec2 #card1 .about:nth-child(1),
+.sec2 #card1 .about:nth-child(2) {
+  border-bottom: #61306F solid 2px;
+}
+@media (min-width: 800px) {
+  .sec2 #card2 {
+    width: 70%;
+  }
+}
+.sec2 #card2 .inner-ex {
+  margin: 5% 0;
+  border-bottom: #706D98 solid 4%;
+}
+.sec2 #cardmid {
+  width: 90%;
+  background-color: #C14659;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+@media (min-width: 800px) {
+  .sec2 #cardmid {
+    width: 100%;
   }
 }
 footer {
+  box-shadow: 3px 0 1rem black;
   background-color: #61306F;
 }
 footer h3 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-align: center;
   color: white;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1%;
+  flex-direction: row;
+}
+footer div a {
+  margin: 0 4%;
 }
