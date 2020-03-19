@@ -138,34 +138,51 @@ body {
 html {
   font-size: 62.5%;
 }
+body {
+  background: linear-gradient(-387deg, #C14659 10%, #983E66 10%, #61306F 70%);
+  background-size: cover;
+}
 h2 {
   font-size: 2.8rem;
   text-align: center;
   font-weight: bold;
-  color: #C14659;
+  color: #b23c4e;
+  font-family: 'PT Serif', serif;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #9391b1;
+}
+h2:nth-child(2) {
+  background-color: whitesmoke;
 }
 h3 {
   font-size: 2.5rem;
   color: white;
+  font-family: 'Fira Sans', sans-serif;
+  letter-spacing: 0.4rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #555375;
+  border-bottom: #D59BBB 0.1rem solid;
 }
 p {
   font-size: 2rem;
+  font-family: 'Nanum Gothic', sans-serif;
   line-height: 1.4;
+  text-shadow: 0.1rem 0.1rem 0.2rem #555375;
+  color: #dcdcdc;
+  padding: 4%;
 }
 h1 {
   font-size: 6rem;
   text-align: center;
   font-size: 'Raleway', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   color: white;
+  text-shadow: 0.1rem 0.1rem 0.2rem #555375;
 }
 .container {
   border: grove 4% white;
   margin: 0 auto;
-  background: linear-gradient(47deg, #C14659, #983E66, #61306F 80%);
 }
 header {
-  font-size: 1.7rem;
   background: #706D98;
 }
 header nav {
@@ -207,7 +224,6 @@ header nav a:hover {
 }
 .sec1 h2 {
   margin-top: 5%;
-  color: #C14659;
 }
 @media (min-width: 800px) {
   .sec1 {
@@ -253,9 +269,12 @@ header nav a:hover {
   border: solid #D59BBB 1px;
   border-radius: 1rem;
   height: fit-content;
-  margin: 1% 0;
+  margin: 3% 0;
   box-shadow: 0 3px 1rem black;
   padding: 3%;
+}
+.sec2 .card div {
+  margin: 3% 0;
 }
 .sec2 #card1 {
   width: 60%;
@@ -267,7 +286,7 @@ header nav a:hover {
 }
 @media (min-width: 800px) {
   .sec2 #card1 {
-    width: 25%;
+    width: 30%;
     margin: 2% 1%;
   }
 }
@@ -281,12 +300,50 @@ header nav a:hover {
 }
 @media (min-width: 800px) {
   .sec2 #card2 {
-    width: 70%;
+    width: 66%;
   }
 }
 .sec2 #card2 .inner-ex {
   margin: 5% 0;
   border-bottom: #706D98 solid 4%;
+}
+.sec2 #card2 .school {
+  border-top: 3px solid #983E66;
+}
+.sec2 #card2 .school h2 {
+  text-align: center;
+}
+.sec2 #card2 .school .parent-school {
+  margin: 0 2%;
+}
+@media (min-width: 800px) {
+  .sec2 #card2 .school .parent-school {
+    display: flex;
+  }
+}
+.sec2 #card2 .school .parent-school .inner-school {
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  border-bottom: 2px #61306F solid;
+}
+@media (min-width: 800px) {
+  .sec2 #card2 .school .parent-school .inner-school {
+    flex-direction: column;
+  }
+  .sec2 #card2 .school .parent-school .inner-school:nth-child(1) {
+    border-right: solid #983E66 2px;
+  }
+}
+.sec2 #card2 .school .parent-school .inner-school p {
+  width: 70%;
+}
+@media (min-width: 800px) {
+  .sec2 #card2 .school .parent-school .inner-school p {
+    width: 90%;
+  }
 }
 .sec2 #cardmid {
   width: 90%;
@@ -301,8 +358,7 @@ header nav a:hover {
   }
 }
 footer {
-  box-shadow: 3px 0 1rem black;
-  background-color: #61306F;
+  background-color: #983E66;
 }
 footer h3 {
   font-size: 2rem;

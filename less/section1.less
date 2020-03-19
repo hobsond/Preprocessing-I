@@ -1,0 +1,36 @@
+.sec1{
+	.flex(column,center);
+	margin-top: 3%;
+
+	h2{
+		margin-top: 5%;
+		
+	}
+	@media @tablet{
+		.flex(row,flex-start);
+		align-items: flex-start;
+	}
+
+	.img-parent{
+		.flex(row,center);
+		
+		@media(min-width:800px){
+			.flex(row,flex-start);
+			
+		}
+		#profile-pic{
+			width:30%;
+			border-radius: 50%;
+			border: 3px solid @secondary-color;
+			object-fit: contain;
+			box-shadow: 0 3px 1rem black;
+			
+			
+			
+		
+		}
+
+	}
+	
+	
+}
