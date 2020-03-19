@@ -1,0 +1,42 @@
+
+header{
+
+	background:@accent1;
+
+	nav{
+		.flex(column,center);
+		@media(min-width: 800px){
+			.flex(row, flex-end)
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+			padding: 4% 0;
+			width: 100%;
+			text-align: center;
+			.transition();
+			font-size: 1.8rem;
+			
+			&:hover{
+				background-color: @third-color;
+				
+			}
+
+
+
+			@media @tablet{
+				width:20%;
+				padding:2% 0;
+
+			}
+		}
+	
+		
+
+
+	
+		
+	}
+
+}
